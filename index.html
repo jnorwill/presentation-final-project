@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.centered-image-circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.image-circle {
+			width: 700px;
+			height: 700px;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.image-circle img {
+			position: absolute;
+			width: 300px;
+			height: auto;
+			transform-origin: center center;
+			border-radius: 10px;
+			border: 1px solid black;
+		}
+
+		.image-circle img:nth-child(1) {
+			transform: rotate(0deg) translate(280px) rotate(0deg);
+		}
+
+		.image-circle img:nth-child(2) {
+			transform: rotate(60deg) translate(280px) rotate(-60deg);
+		}
+
+		.image-circle img:nth-child(3) {
+			transform: rotate(120deg) translate(280px) rotate(-120deg);
+		}
+
+		.image-circle img:nth-child(4) {
+			transform: rotate(180deg) translate(280px) rotate(-180deg);
+		}
+
+		.image-circle img:nth-child(5) {
+			transform: rotate(240deg) translate(280px) rotate(-240deg);
+		}
+
+		.image-circle img:nth-child(6) {
+			transform: rotate(300deg) translate(280px) rotate(-300deg);
+		}
+
+		.image-circle img:nth-child(7) {
+			transform: rotate(360deg) translate(0) rotate(-360deg);
+			width: 500px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<img src="./assets/about.jpg" alt="Lucky Coders">
+			</section>
+
+			<section data-auto-animate>
+				<div class="centered-image-circle">
+					<div class="image-circle">
+						<img src="./assets/project1.jpg" alt="img 1">
+						<img src="./assets/project2.jpg" alt="img 2">
+						<img src="./assets/project3.jpg" alt="img 3">
+						<img src="./assets/project4.jpg" alt="img 1">
+						<img src="./assets/project5.jpg" alt="img 2">
+						<img src="./assets/project6.jpg" alt="img 3">
+						<img src="./assets/project7.jpg" alt="img 3">
+					</div>
+				</div>
+			</section>
+			<section>
+				<h6>Изучение ТЗ 🔍</h6>
+				<h6> + </h6>
+				<h6>Делегирование 📋</h6>
+				<h6> + </h6>
+				<h6>Выполнение 👩‍💻👨‍💻👩‍💻</h6>
+				<h6> + </h6>
+				<h6>Обсуждение 💬</h6>
+				<h6> = </h6>
+				<h6>Успех! 🎰</h6>
+			</section>
+
+			<section>
+				<h4>Наша канбан-доска</h4>
+				<img src="./assets/board.jpg" alt="Board">
+			</section>
+			<section>
+				<img src="./assets/milestones.jpg" alt="Milestones">
+			</section>
+
+
+			<section>
+				<h4>Чат в Телеграме</h4>
+				<img src="./assets/telegram.jpg" alt="Telegram">
+			</section>
+			<section>
+				<h4>Дискорд-канал</h4>
+				<img src="./assets/discord.jpg" alt="Discord">
+			</section>
+			<section>
+				<h4>Mentor's help</h4>
+				<img src="./assets/mentor.jpg" alt="Mentor's help">
+			</section>
+
+
+			<section>
+				<img src="./assets/statistics.jpg" alt="Board">
+			</section>
+			<section>
+				<div style="display: flex; gap: 20px;">
+					<img src="./assets/pr1.jpg" alt="Milestones" style="width: 50%;">
+					<img src="./assets/pr2.jpg" alt="Milestones" style="width: 50%;">
+				</div>
+			</section>
+
+			<section>
+				<h3>Спасибо за внимание!</h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
